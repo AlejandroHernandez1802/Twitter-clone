@@ -1,0 +1,15 @@
+extends layouts/login-main-layout
+block content
+  .login-container
+    .login-header-container
+      span Register
+    .login-form-container  
+      form.login-form(method="POST")
+        input(type="text", placeholder="First name", required="")
+        input(type="text", placeholder="Last name", required="")
+        input(type="text", placeholder="Username", required="")
+        input(type="email", placeholder="Enter your email", required="")
+        input(type="password", placeholder="Enter your password", required="")
+        input(type="password", placeholder="Confirm your password", required="")
+        input.login-button(type="submit")
+      a(href="/login") Already have an account? Log in
